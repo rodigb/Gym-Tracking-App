@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".MainScreenActivity">
+
+    <Button
+        android:id="@+id/strstandards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="37dp"
+        android:layout_marginRight="37dp"
+        android:background="@drawable/gradient1"
+        android:text="Standards"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/str_info"
+        app:layout_constraintTop_toTopOf="@+id/button_profile" />
+
+    <Button
+        android:id="@+id/str_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+
+
+        android:layout_marginEnd="82dp"
+        android:layout_marginRight="82dp"
+        android:background="@drawable/gradient1"
+        android:text="Record and progress"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBaseline_toBaselineOf="@+id/strstandards"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="242dp"
+        android:layout_marginRight="242dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/userPhoto"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Requestbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+
+
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/gradient1"
+        android:text="Request Permissions"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button_profile"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+
+
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/gradient1"
+        android:text="Notifications"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/Requestbtn"
+        app:layout_constraintTop_toBottomOf="@+id/userPhoto" />
+
+    <ImageView
+        android:id="@+id/userPhoto"
+        android:layout_width="0dp"
+        android:layout_height="167dp"
+
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/img_avatar"
+        app:layout_constraintEnd_toStartOf="@+id/editName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

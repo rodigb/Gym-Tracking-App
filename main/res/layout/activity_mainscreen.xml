@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".MainScreenActivity">
+
+    <Button
+        android:id="@+id/strstandards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="33dp"
+        android:layout_marginRight="33dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/gradient1"
+        android:text="Standards"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/str_info"
+        app:layout_constraintEnd_toEndOf="@+id/str_info"
+        app:layout_constraintTop_toBottomOf="@+id/editName" />
+
+    <Button
+        android:id="@+id/str_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+
+
+        android:layout_marginStart="113dp"
+        android:layout_marginLeft="113dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/gradient1"
+        android:text="Record and progress"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/button_profile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/strstandards" />
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="250dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="46dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/strstandards"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userPhoto" />
+
+    <Button
+        android:id="@+id/Requestbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+
+
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/gradient1"
+        android:text="Request Permissions"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_profile" />
+
+    <Button
+        android:id="@+id/button_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+
+
+        android:layout_marginEnd="33dp"
+        android:layout_marginRight="33dp"
+        android:layout_marginBottom="137dp"
+        android:background="@drawable/gradient1"
+        android:text="User Guide"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/Requestbtn"
+        app:layout_constraintEnd_toEndOf="@+id/str_info"
+        app:layout_constraintTop_toBottomOf="@+id/str_info" />
+
+    <ImageView
+        android:id="@+id/userPhoto"
+        android:layout_width="170dp"
+        android:layout_height="0dp"
+
+        android:layout_marginTop="47dp"
+        android:layout_marginBottom="25dp"
+        android:src="@drawable/img_avatar"
+        app:layout_constraintBottom_toTopOf="@+id/editName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
